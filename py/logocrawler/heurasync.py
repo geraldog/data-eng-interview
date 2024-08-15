@@ -1742,4 +1742,4 @@ if __name__ == "__main__":
     sys.stderr.write(str(no_of_too_big_html) + " Too Big or 0-bytes HTMLs\n")
     sys.stderr.write(str(no_of_http_errors) + " Total HTTP(S) errors\n")
     sys.stderr.write(str(no_of_proposed_logos) + " Proposed Logos\n")
-sys.stderr.write(str(no_of_inlined_svgs) + " Inlined SVGs\n\n")
+    sys.stderr.write(str(no_of_inlined_svgs) + " Inlined SVGs\n\n")
