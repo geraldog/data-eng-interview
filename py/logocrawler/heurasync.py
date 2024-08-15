@@ -1715,6 +1715,8 @@ async def main():
             await asyncio.sleep(0.02)
         if done_reading is True:
             break
+    while asyncio.all_tasks() != 1:
+        await asyncio.sleep(0.02)
     del background_tasks
 
 if __name__ == "__main__":
