@@ -1,3 +1,19 @@
+# Heurasync Sonic
+
+Heurasync Sonic uses two dependencies from nixpkgs-unstable.
+If you haven't already subscribe locally to unstable with:
+`nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixpkgs-unstable`
+Then make sure to update the channels:
+`nix-channel --update`
+
+Please run the python script from the topmost directory such as:
+`time python -m py.logocrawler.heurasync < cloudflare-radar-domains-top-1000000-20240715-20240722.csv  > logos-cloudflare-2.csv`
+from your nix shell.
+
+It will populate the logos directory with the logos it finds from the STDIN inputs and output as CSV to STDOUT.
+
+Best-appreciated with a long-list such as given Cloudflare's. Not every possible heuristic implemented - redirect STDERR to error file to have an idea of where and how it failed.
+
 # Overview
 
 A technical interview project for data engineers.
